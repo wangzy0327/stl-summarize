@@ -14,7 +14,7 @@ C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的[
 
 [无序关联式容器 unordered_map](无序关联式容器/C++STL无序关联式容器-unordered_map.md) 
 
-[无序关联式容器 set](无序关联式容器/C++STL无序关联式容器-unordered_set.md) 
+[无序关联式容器 unordered_set](无序关联式容器/C++STL无序关联式容器-unordered_set.md) 
 
 [关联式容器 pair](关联式容器/C++STL关联式容器-pair.md) 
 
