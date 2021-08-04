@@ -28,4 +28,4 @@ C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的[
 
 [容器适配器 priority_queue](容器适配器/C++STL容器适配器-priority_queue.md) 
 
-[排序函数](排序函数/C++STLsort()排序函数) 
+[排序函数](排序函数/C++STL-sort排序函数.md) 
