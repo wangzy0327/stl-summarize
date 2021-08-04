@@ -10,11 +10,11 @@ C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的[
 
 [序列式容器 deque](序列式容器/C++STL序列式容器-deque.md) 
 
-[序列式容器 list](序列式容器/C++STL序列式容器list.md) 
+[序列式容器 list](序列式容器/C++STL序列式容器-list.md) 
 
-[无序关联式容器 unordered_map](无序关联式容器/C++STL无序关联式容器unordered_map.md) 
+[无序关联式容器 unordered_map](无序关联式容器/C++STL无序关联式容器-unordered_map.md) 
 
-[无序关联式容器 set](无序关联式容器/C++STL无序关联式容器unordered_set.md) 
+[无序关联式容器 set](无序关联式容器/C++STL无序关联式容器-unordered_set.md) 
 
 [关联式容器 pair](关联式容器/C++STL关联式容器-pair.md) 
 
