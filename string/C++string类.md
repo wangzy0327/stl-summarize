@@ -52,7 +52,7 @@ FILE *fp = fopen(path.c_str(), "rt");
 
 为了使用C语言中的 fopen() 函数打开文件，必须将 string 字符串转换为C风格的字符串。
 
-补充：string 跟 int 、double、float、 long long类型相互转化（C++ 11），atoi、atof、atoll接收字符串的const指针（const char*）
+**补充**：string 跟 int 、double、float、 long long类型相互转化（C++ 11），atoi、atof、atoll接收字符串的const指针（const char*）
 
 string转int
 
@@ -80,6 +80,48 @@ int、double、float、long long 转 string
 ```c++
 double d = 123.456
 string sd = to_string(d);
+```
+
+**补充**：字符处理常用的一些函数。打印布尔类型的输出时，需要在前面加上boolalpha
+
+判断一个字符是否为数字
+
+```c++
+char c = '0';
+bool b = isalpha(c);
+std::cout<<boolalpha<<b<<endl;
+```
+
+判断一个字符是否是字母
+
+```c++
+char c = 'c';
+bool b = isalpha(c);
+std::cout<<boolalpha<<b<<endl;
+```
+
+判断一个字符是否是字母或数字
+
+```c++
+char c = 'B';
+bool b = isalpha(c);
+std::cout<<boolalpha<<b<<endl;
+```
+
+判断一个字符是否是大写字母
+
+```c++
+char c = 'B';
+bool b = isalpha(c);
+std::cout<<boolalpha<<b<<endl;
+```
+
+判断一个字符是否是小写字母
+
+```c++
+char c = 'r';
+bool b = isalpha(c);
+std::cout<<boolalpha<<b<<endl;
 ```
 
 #### string 字符串的输入输出

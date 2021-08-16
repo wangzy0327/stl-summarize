@@ -93,11 +93,26 @@ std::vector<int>value2(std::begin(value1),std::begin(value1)+3);//value2保存{1
 
 由此，value2 容器中就包含了 {1,2,3} 这 3 个元素。
 
+**注：vector< bool> 并不是一个通常意义上的vector容器，这个源自于历史遗留问题。**一般用到时可采用vector<char>代替。
+
+补充：vector与其他容器转化，示例 vector转list。
+
+```c++
+std::vector<char> arr = {'a','c','b'};
+std::list<char> li;
+li.assign(arr.begin(),arr.end());
+for(auto ele:li)
+    std::cout<<ele<<" ";
+std::cout<<endl;
+```
+
+输出结果为：
+
+> a c b
+
 #### vector容器包含的成员函数
 
 相比 array 容器，vector 提供了更多了成员函数供我们使用，它们各自的功能如表 1 所示。
-
-
 
 <center>表 1 vector 容器的成员函数</center>
 
