@@ -32,3 +32,6 @@ C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的[
 
 [lambda表达式与函数对象](lambda表达式与函数对象/C++lambda表达式与函数对象.md) 
 
+[函数指针与可变参数](函数指针与可变参数/函数指针与可变参数.md)
+
+[class和struct区别](class和struct区别/class和struct区别.md)
