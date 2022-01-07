@@ -35,3 +35,9 @@ C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的[
 [函数指针与可变参数](函数指针与可变参数/函数指针与可变参数.md)
 
 [class和struct区别](class和struct区别/class和struct区别.md)
+
+[gcc分步编译过程](cpp-code/_01_stl_vector/compile-command.sh)
+
+[struct](cpp-code/_02_struct/_02_struct.cpp)
+
+[class](cpp-code/_03_class/_03_class.cpp)
