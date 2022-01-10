@@ -45,3 +45,5 @@ C++ 对模板（Template）支持得很好，STL 就是借助模板把常用的[
 [静态链接制作](cpp-code/_04_static_link/compile_link.sh) [调用静态链接库执行](cpp-code/_04_static_link/arithmetic/static_link.sh)
 
 [动态链接制作](cpp-code/_05_dynamic_link/compile_link.sh) [调用动态链接库执行](cpp-code/_05_dynamic_link/arithmetic/dynamic_link.sh)
+
+[cmake入门实战](cpp-code/_06_cmake_demo/README.md)
