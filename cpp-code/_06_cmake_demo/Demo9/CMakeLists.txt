@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 2.8)
 
+
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
+set(CMAKE_CXX_STANDARD 17)
+
 #项目信息
 project(Demo9)
 
@@ -14,6 +19,10 @@ aux_source_directory(. DIR_SRCS)
 
 # 添加 math 子目录
 add_subdirectory(mymath)
+
+set(CMAKE_BUILD_TYPE "Debug")
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb -std=c++17")
+set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall -std=c++17")
 
 # 指定生成目标
 add_executable(Demo9 ${DIR_SRCS})
