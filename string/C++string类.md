@@ -88,7 +88,7 @@ string sd = to_string(d);
 
 ```c++
 char c = '0';
-bool b = isalpha(c);
+bool b = isdigit(c);
 std::cout<<boolalpha<<b<<endl;
 ```
 
@@ -104,7 +104,7 @@ std::cout<<boolalpha<<b<<endl;
 
 ```c++
 char c = 'B';
-bool b = isalpha(c);
+bool b = isalnum(c);
 std::cout<<boolalpha<<b<<endl;
 ```
 
@@ -112,7 +112,7 @@ std::cout<<boolalpha<<b<<endl;
 
 ```c++
 char c = 'B';
-bool b = isalpha(c);
+bool b = isupper(c);
 std::cout<<boolalpha<<b<<endl;
 ```
 
@@ -120,7 +120,7 @@ std::cout<<boolalpha<<b<<endl;
 
 ```c++
 char c = 'r';
-bool b = isalpha(c);
+bool b = islower(c);
 std::cout<<boolalpha<<b<<endl;
 ```
 
