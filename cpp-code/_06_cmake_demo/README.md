@@ -22,3 +22,4 @@ GTEST_COLOR=TRUE ctest --output-on-failure
 [示例模板](Demo-template/CMakeLists.txt)
 
 [CMake引入本地Googletest示例](Demo-unittest/CMakeLists.txt)  [GoogleTest编译安装](https://blog.csdn.net/qq_32062657/article/details/125378651?spm=1001.2014.3001.5502)
+
