@@ -1,5 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 
+# compiler options must set before project
+# set(CMAKE_C_COMPILER "/home/wzy/sycl_workspace/build-cuda/bin/clang")
+# set(CMAKE_CXX_COMPILER "/home/wzy/sycl_workspace/build-cuda/bin/clang++")
+# set(CMAKE_CXX_STANDARD 17)
+
 project(hello_library)
 
 ############################################################
@@ -20,6 +25,44 @@ project(hello_library)
 #         /home/wzy/cpp-code/demo/include
 # )
 
+############################################################
+# Set runtime path(exetuable binary find link path)
+############################################################
+
+set(CMAKE_BUILD_RPATH "${DPCPP_SYCL_HOME}/lib;${CMAKE_BUILD_RPATH}")
+message(STATUS "cmake build rpath : ${CMAKE_BUILD_RPATH}")
+
+
+############################################################
+# Set cmake flag options
+############################################################
+
+set(CMAKE_BUILD_TYPE "Debug")
+# sycl cmake flags example
+# set(CMAKE_CXX_FLAGS "-fsycl -fsycl-targets=nvptx64-nvidia-cuda")
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb -std=c++17")
+set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O3 -Wall -std=c++17")
+
+# no warning
+add_definitions(-w)
+
+# compile and link flag options must set before add_executable
+# add_compile_options(-fsycl -fsycl-targets=nvptx64-nvidia-cuda)
+# add_link_options(-fsycl -fsycl-targets=nvptx64-nvidia-cuda)
+
+
+# releative contents of diffs link_directories against build_rpath refer https://blog.csdn.net/qq_32062657/article/details/125412879
+
+############################################################
+# link directory like gcc -L
+############################################################
+link_directories("/home/wzy/cpp-code/demo/shared;/home/wzy/cpp-code/demo")
+
+############################################################
+# set rpath like gcc -Wl,-rpath=
+############################################################
+SET_TARGET_PROPERTIES(hello_binary
+    PROPERTIES BUILD_RPATH "/home/wzy/cpp-code/demo/shared;/home/wzy/cpp-code/demo")
 
 
 ############################################################
@@ -53,6 +96,8 @@ IF (NOT MYMATH)
 ENDIF(NOT MYMATH)
 
 message(STATUS " mymath path : " ${MYMATH})
+
+
 
 
 # link the new hello_library target with the hello_binary target
