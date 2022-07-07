@@ -23,3 +23,8 @@ GTEST_COLOR=TRUE ctest --output-on-failure
 
 [CMake引入本地Googletest示例](Demo-unittest/CMakeLists.txt)  [GoogleTest编译安装](https://blog.csdn.net/qq_32062657/article/details/125378651?spm=1001.2014.3001.5502)
 
+实际开发过程中遇到的两个示例
+
+[示例1](Demo-sycl-app/CMakeLists.txt)
+
+[示例2](Demo-dnnl-app/CMakeLists.txt)
