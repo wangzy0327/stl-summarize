@@ -58,28 +58,46 @@ string转int
 
 ```c++
 string s = "123";
-int i = atoi(s.c_str());
+// C 语言风格    
+// int i = atoi(s.c_str());
+// C++ std   
+// std :: stoi() - 将string转换为int  
+int i = stoi(s);
 ```
 
 string转double、float
 
 ```c++
 string s = "123.456";
-double d = atof(s.c_str());
+// C 语言风格     
+// float f = atof(s.c_str());
+// C++ std    
+// std :: stof() - 将string转换为float
+float f = stof(s);
 ```
 
 string转long long
 
 ```c++
 string s = "218909982938";
-long long l = atoll(s.c_str());
+// C 语言风格     
+// long long l = atoll(s.c_str());
+// C++ std    
+// std :: stoll() - 将string转换为long long
+long long l = stoll(s);    
 ```
 
 int、double、float、long long 转 string
 
 ```c++
 double d = 123.456
+// C 语言风格     
 string sd = to_string(d);
+// C++ std    
+// std :: stod() - 将string转换为double 
+// std :: stold() - 将string转换为long double    
+double d = stod(s);    
+    
 ```
 
 **补充**：字符处理常用的一些函数。打印布尔类型的输出时，需要在前面加上boolalpha
